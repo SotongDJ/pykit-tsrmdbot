@@ -3,8 +3,8 @@
 模式：@mode@
 　　　　
 時間範圍
-＃起始點：@dtempo@
-＃終止點：@utempo@
+＃起始點：@btempo@
+＃終止點：@ftempo@
 　（格式：yyyy-mm-dd）
 　　　　　
 目標類別： @cokey@　（類別）

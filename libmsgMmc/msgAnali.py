@@ -7,8 +7,8 @@ def chooseMode(lingua):
 def abratioMain(lingua,dicto):
     final = open('descrimmc/'+lingua+'/abratioMain.descri').read()
     final = final.replace('@mode@',mmctool.ul(dicto.get('mode','')))
-    final = final.replace('@dtempo@',mmctool.ul(dicto.get('dtempo','')))
-    final = final.replace('@utempo@',mmctool.ul(dicto.get('utempo','')))
+    final = final.replace('@btempo@',mmctool.ul(dicto.get('btempo','')))
+    final = final.replace('@ftempo@',mmctool.ul(dicto.get('ftempo','')))
     final = final.replace('@cokey@',mmctool.ul(dicto.get('cokey','')))
     final = final.replace('@cokas@',mmctool.ul(dicto.get('cokas',''),modda='klass',lingua=lingua))
     final = final.replace('@targe@',mmctool.ul(dicto.get('targe',''),modda='klass',lingua=lingua))
@@ -22,8 +22,8 @@ def abratioKeywo(lingua,keywo):
 def abratioResut(lingua,resut):
     print('resut : '+pprint.pformat(resut, compact=True))
 
-    dtempo = resut.get('dtempo','')
-    utempo = resut.get('utempo','')
+    btempo = resut.get('btempo','')
+    ftempo = resut.get('ftempo','')
     cokas = resut.get('cokas','')
     cokey = resut.get('cokey','')
     targe = resut.get('targe','')
@@ -38,8 +38,8 @@ def abratioResut(lingua,resut):
     skdic = mmcDefauV.keywo('transle',lingua=lingua)
 
     a = open('descrimmc/'+lingua+'/abratioResutA.descri').read()
-    a = a.replace('@dtempo@',dtempo)
-    a = a.replace('@utempo@',utempo)
+    a = a.replace('@btempo@',btempo)
+    a = a.replace('@ftempo@',ftempo)
     a = a.replace('@cokey@',cokey)
     a = a.replace('@cokas@',skdic.get(cokas,''))
     a = a.replace('@targe@',skdic.get(targe,''))
@@ -70,8 +70,8 @@ def atrenMain(lingua,dicto):
     final = open('descrimmc/'+lingua+'/atrenMain.descri').read()
 
     final = final.replace('@mode@',mmctool.ul(dicto.get('mode','')))
-    final = final.replace('@dtempo@',mmctool.ul(dicto.get('dtempo','')))
-    final = final.replace('@utempo@',mmctool.ul(dicto.get('utempo','')))
+    final = final.replace('@btempo@',mmctool.ul(dicto.get('btempo','')))
+    final = final.replace('@ftempo@',mmctool.ul(dicto.get('ftempo','')))
     final = final.replace('@cokey@',mmctool.ul(dicto.get('cokey','')))
     final = final.replace('@cokas@',mmctool.ul(dicto.get('cokas',''),modda='klass',lingua=lingua))
     final = final.replace('@leve@',mmctool.ul(ledic.get(dicto.get('leve',10),''),modda='klass',lingua=lingua))
@@ -85,8 +85,8 @@ def atrenKeywo(lingua,keywo):
 def atrenResut(lingua,resut):
     print('resut : '+pprint.pformat(resut, compact=True))
 
-    dtempo = resut.get('dtempo','')
-    utempo = resut.get('utempo','')
+    btempo = resut.get('btempo','')
+    ftempo = resut.get('ftempo','')
     cokas = resut.get('cokas','')
     cokey = resut.get('cokey','')
     graf = resut.get('graf',[])
@@ -101,8 +101,8 @@ def atrenResut(lingua,resut):
     skdic = mmcDefauV.keywo('transle',lingua=lingua)
 
     a = open('descrimmc/'+lingua+'/atrenResutA.descri').read()
-    a = a.replace('@dtempo@',dtempo)
-    a = a.replace('@utempo@',utempo)
+    a = a.replace('@btempo@',btempo)
+    a = a.replace('@ftempo@',ftempo)
     a = a.replace('@cokey@',cokey)
     a = a.replace('@cokas@',skdic.get(cokas,''))
 
@@ -136,8 +136,8 @@ def akaunMain(lingua,dicto):
     final = open('descrimmc/'+lingua+'/akaunMain.descri').read()
 
     final = final.replace('@mode@',mmctool.ul(dicto.get('mode','')))
-    final = final.replace('@dtempo@',mmctool.ul(dicto.get('dtempo','')))
-    final = final.replace('@utempo@',mmctool.ul(dicto.get('utempo','')))
+    final = final.replace('@btempo@',mmctool.ul(dicto.get('btempo','')))
+    final = final.replace('@ftempo@',mmctool.ul(dicto.get('ftempo','')))
     final = final.replace('@cokas@',mmctool.ul(dicto.get('cokas',''),modda='klass',lingua=lingua))
     final = final.replace('@acuno@',mmctool.ul(dicto.get('acuno',''),modda='klass',lingua=lingua))
     final = final.replace('@balan@',mmctool.ul(dicto.get('balan','')))
@@ -151,8 +151,8 @@ def akaunKeywo(lingua,keywo):
 def akaunResut(lingua,resut):
     print('resut : '+pprint.pformat(resut, compact=True))
 
-    dtempo = resut.get('dtempo','')
-    utempo = resut.get('utempo','')
+    btempo = resut.get('btempo','')
+    ftempo = resut.get('ftempo','')
     acuno = resut.get('acuno','')
     cokas = resut.get('cokas','')
     balan = resut.get('basum','')
@@ -168,8 +168,8 @@ def akaunResut(lingua,resut):
     skdic = mmcDefauV.keywo('transle',lingua=lingua)
 
     a = open('descrimmc/'+lingua+'/akaunResutA.descri').read()
-    a = a.replace('@dtempo@',dtempo)
-    a = a.replace('@utempo@',utempo)
+    a = a.replace('@btempo@',btempo)
+    a = a.replace('@ftempo@',ftempo)
     a = a.replace('@cokas@',skdic.get(cokas,''))
     a = a.replace('@acuno@',acuno)
     a = a.replace('@balan@',balan)

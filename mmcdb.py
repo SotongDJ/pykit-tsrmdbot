@@ -463,15 +463,15 @@ def listList(datte,usrid):
     except IndexError :
         return ''
 
-def timra(usrid, dtempo='',utempo='', modde='uuid'):
+def timra(usrid, btempo='',ftempo='', modde='uuid'):
     libra = opendb(usrid)
     rawdb = libra.get('raw',{})
     keydb = libra.get('key',{})
 
-    if dtempo == '':
-        dtempo = tool.date(modde=1)[0:8]
-    if utempo == '':
-        utempo = tool.date(modde=1)[0:8]
+    if btempo == '':
+        btempo = tool.date(modde=1)[0:8]
+    if ftempo == '':
+        ftempo = tool.date(modde=1)[0:8]
 
     tok = []
     tik = sorted(set(keydb.get('datte',{}).keys()))
@@ -479,32 +479,32 @@ def timra(usrid, dtempo='',utempo='', modde='uuid'):
     toka = 0
     toko = len(tik)
     try:
-        toka = tik.index(dtempo)
+        toka = tik.index(btempo)
     except ValueError:
         ck = 0
         for n in sorted(tik, reverse=True):
-            if dtempo[0:8] in n:
+            if btempo[0:8] in n:
                 toka = tik.index(n)
                 ck = 1
 
         if ck == 0:
             for n in sorted(tik, reverse=True):
-                if dtempo[0:4] in n:
+                if btempo[0:4] in n:
                     toka = tik.index(n)
                     ck = 1
 
     try:
-        toko = tik.index(utempo)
+        toko = tik.index(ftempo)
     except ValueError:
         ck = 0
         for n in tik:
-            if utempo[0:8] in n:
+            if ftempo[0:8] in n:
                 toko = tik.index(n)
                 ck = 1
 
         if ck == 0:
             for n in tik:
-                if utempo[0:4] in n:
+                if ftempo[0:4] in n:
                     toko = tik.index(n)
                     ck = 1
 

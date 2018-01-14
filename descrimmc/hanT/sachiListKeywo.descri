@@ -4,9 +4,9 @@
 　　　　
 設定為時間範圍的：
 ＃起始點
-　/set_as_dtempo
+　/set_as_btempo
 ＃終止點
-　/set_as_utempo
+　/set_as_ftempo
 　　　　
 搜索關鍵字：
 　/set_as_keywo

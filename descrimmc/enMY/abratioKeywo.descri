@@ -4,9 +4,9 @@ Keyword: @keywo@
 　　　
 Set time period:
 ＃Begin
-　/set_as_dtempo
+　/set_as_btempo
 ＃End
-　/set_as_utempo
+　/set_as_ftempo
 　　
 Class to limit:
 　/set_as_cokey

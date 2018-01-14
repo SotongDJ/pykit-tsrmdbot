@@ -37,7 +37,7 @@ def keywo(text,lingua='enMY'):
         'statics':{
             'mode':'',
             'leve':10,
-            'dtempo':'','utempo':'',
+            'btempo':'','ftempo':'',
             'cokas':'','cokey':'',
             'targe':'','keywo':'',
             'acuno':'','balan':'0',
@@ -69,10 +69,10 @@ def keywo(text,lingua='enMY'):
         },
         'recset':['namma', 'klass', 'shoop', 'price'],
         'staset':{
-            'abratio':['dtempo','utempo','cokey','cokas','targe'],
-            'atren':['dtempo','utempo','cokey','cokas','leve'],
-            'akaun':['dtempo','utempo','cokas','acuno','balan'],
-            'sachi':['dtempo','utempo','keywo']
+            'abratio':['btempo','ftempo','cokey','cokas','targe'],
+            'atren':['btempo','ftempo','cokey','cokas','leve'],
+            'akaun':['btempo','ftempo','cokas','acuno','balan'],
+            'sachi':['btempo','ftempo','keywo']
         }
     }
     woood = {

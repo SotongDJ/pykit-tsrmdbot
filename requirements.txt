@@ -1,4 +1,4 @@
-np==0.2.0
-numpy==1.12.1
-requests==2.2.1
-telepot==10.5
+np==1.0.2
+numpy==1.19.4
+requests==2.24.0
+telepot==12.7
